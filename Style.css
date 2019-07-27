@@ -1,0 +1,144 @@
+/*  
+  Made by Clarisse Tarrou
+  Project : Personnal Portfolio
+  Date : 07.27.2019 
+  Github/CodePen: ArcticSubarine;
+*/
+
+
+/* Navigation bar */
+
+#navbar{
+  display: block;
+  align-self: flex-end;
+  margin: 0;
+  padding: 1em;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  position: fixed;
+}
+
+#navbar a{
+  font-family: verdana, arial;
+  color: black;
+  text-decoration: none;
+  background-color : white;
+  text-align: center;
+  padding: 2em 2em 1em 2em;
+  margin-bottom: 1em;
+}
+
+#navbar a:hover{
+  background-color: LightGrey;
+}
+
+/* End navbar*/
+
+/* Welcome section */
+
+#welcome-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: verdana, arial;
+  text-align: center;
+  color: black;
+  background-color: white;
+  height: 100vh;
+}
+
+h1{
+  font-size: 300%;
+  padding: 0;
+  margin: 0;
+}
+
+#description{
+  font-size: 140%;
+  color: #293133;
+}
+
+/* Projects section */
+
+#projects{
+  background-color: #fef86c;
+  font-family: verdana, arial;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+#project-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.project-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 2rem;
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.project-tile{
+  text-decoration: none;
+  color: #293133;
+}
+
+#project-title{
+  background-color: #293133;
+  color: white;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 0;
+  border-radius: 5px;
+}
+
+#project-title:hover{
+  background-color: LightGrey;
+  color: black;
+}
+
+#projects h2{
+  color:  black;
+  text-align: center;
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+
+@media (max-width: 30.625em) {
+  .projects{
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Contact section */
+
+#contact{
+  background-color: Grey;
+  color: black;
+  font-family: verdana, arial;
+  text-align: center;
+  margin: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#contact img{
+  height: 2rem;
+}
